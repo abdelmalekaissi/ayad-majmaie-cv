@@ -6,6 +6,10 @@ import {
   type MotionValue,
 } from 'framer-motion'
 import FadeIn from './FadeIn'
+import belgiumFlag from '../assets/belgium-flag.png'
+import helhaLogo from '../assets/helha-logo.jpg'
+import ifapmeLogo from '../assets/ifapme-logo.png'
+import iraqEmblem from '../assets/iraq-emblem.webp'
 
 type Entry = {
   title: string
@@ -17,6 +21,9 @@ type Project = {
   number: string
   category: string
   name: string
+  logo?: string
+  logo2?: string
+  logoAlt?: string
   entries: Entry[]
 }
 
@@ -25,6 +32,9 @@ const PROJECTS: Project[] = [
     number: '01',
     category: 'Un parcours, deux pays',
     name: "D'Irak à la Belgique",
+    logo: iraqEmblem,
+    logo2: belgiumFlag,
+    logoAlt: 'Emblème de l\u2019Irak',
     entries: [
       {
         title: 'Naissance en Irak',
@@ -56,6 +66,7 @@ const PROJECTS: Project[] = [
     number: '02',
     category: 'La bascule vers l\u2019informatique',
     name: 'HELHa Montignies — 1 an',
+    logo: helhaLogo,
     entries: [
       {
         title: 'Bachelier Informatique de Gestion — BAC 1',
@@ -81,6 +92,7 @@ const PROJECTS: Project[] = [
     number: '03',
     category: 'La formation qui construit le métier',
     name: 'IFAPME Charleroi — 2 ans',
+    logo: ifapmeLogo,
     entries: [
       {
         title: '1re année — les fondamentaux',
@@ -141,7 +153,23 @@ function ProjectCard({
           >
             {project.number}
           </span>
-          <div className="text-right">
+          <div className="text-right flex flex-col items-end gap-2">
+            <div className="flex items-center gap-3">
+              {project.logo && (
+                <img
+                  src={project.logo}
+                  alt={project.logoAlt ?? ''}
+                  className="h-10 sm:h-12 md:h-14 w-auto object-contain"
+                />
+              )}
+              {project.logo2 && (
+                <img
+                  src={project.logo2}
+                  alt="Drapeau de la Belgique"
+                  className="h-10 sm:h-12 md:h-14 w-auto object-contain"
+                />
+              )}
+            </div>
             <p className="font-light uppercase tracking-widest text-[#D7E2EA]/60 text-sm">
               {project.category}
             </p>
