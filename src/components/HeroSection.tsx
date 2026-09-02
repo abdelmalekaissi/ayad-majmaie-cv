@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { label: 'Stage', href: '#stage' },
   { label: 'Compétences', href: '#services' },
   { label: 'Parcours', href: '#projects' },
-  { label: 'Contact', href: '#top' },
+  { label: 'Contact', href: '#contact' },
 ]
 
 const HERO_VIDEO_URL =

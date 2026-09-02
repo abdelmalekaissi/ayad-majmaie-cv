@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import Typewriter from './Typewriter'
+import abdelPhoto from '../assets/abdel-photo.png'
 
 const feedbacks = [
   {
@@ -9,7 +10,7 @@ const feedbacks = [
       '«Je tiens à souligner la rigueur, la motivation et les compétences techniques d\u2019Ayad. Durant son stage, il a su s\u2019intégrer dans plusieurs projets variés — du site survey et du design Wi-Fi jusqu\u2019aux plans de positionnement multi-systèmes et au câblage sur chantier — avec une réelle autonomie. Son appétence pour l\u2019intelligence artificielle appliquée à nos flux de travail est un vrai plus. C\u2019est un profil fiable, curieux et qui apprend vite. Je recommande Ayad sans hésitation. »',
     author: 'Abdelmalek Aissi',
     title: 'Directeur technique — ICT Vision',
-    avatar: 'https://picsum.photos/seed/abdelmalek/100/100',
+    avatar: abdelPhoto,
   },
   {
     quote:

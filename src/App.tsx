@@ -5,6 +5,7 @@ import InternshipSection from './components/InternshipSection'
 import ServicesSection from './components/ServicesSection'
 import ProjectsSection from './components/ProjectsSection'
 import FeedbackSection from './components/FeedbackSection'
+import FooterSection from './components/FooterSection'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <ServicesSection />
       <ProjectsSection />
       <FeedbackSection />
+      <FooterSection />
     </div>
   )
 }
