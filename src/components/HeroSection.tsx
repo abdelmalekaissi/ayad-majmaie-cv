@@ -5,6 +5,7 @@ import ayadImg from '../assets/ayad.jpg'
 
 const NAV_LINKS = [
   { label: 'Profil', href: '#about' },
+  { label: 'Stage', href: '#stage' },
   { label: 'Compétences', href: '#services' },
   { label: 'Parcours', href: '#projects' },
   { label: 'Contact', href: '#top' },
