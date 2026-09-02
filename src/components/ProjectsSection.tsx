@@ -17,84 +17,94 @@ type Project = {
   number: string
   category: string
   name: string
-  block?: string
   entries: Entry[]
 }
 
 const PROJECTS: Project[] = [
   {
     number: '01',
-    category: 'Expérience professionnelle · Réceptionniste',
-    name: 'Hôtel Ibis — Charleroi',
+    category: 'Un parcours, deux pays',
+    name: "D'Irak à la Belgique",
     entries: [
       {
-        title: 'Accueil & relation client',
-        subtitle: 'Gestion du standard téléphonique avec un accueil chaleureux.',
-        dates: '2023',
+        title: 'Naissance en Irak',
+        subtitle:
+          'Une enfance dans un pays marqué par l\u2019instabilité, loin de l\u2019idée même d\u2019un avenir serein.',
+        dates: '',
       },
       {
-        title: 'Réservations',
-        subtitle: 'Traitement des réservations entrantes pour optimiser le taux d\u2019occupation annuel.',
-        dates: '2023',
+        title: "L'arrivée en Belgique à 14 ans",
+        subtitle:
+          'Quitter son pays, sa langue, ses repères. Débarquer adolescent dans un pays nouveau, sans un mot de français.',
+        dates: 'À 14 ans',
       },
       {
-        title: 'Coordination',
-        subtitle: 'Coordination des services hôteliers pour garantir un séjour d\u2019exigence.',
-        dates: '2023',
+        title: 'Tout reconstruire, à partir de zéro',
+        subtitle:
+          'Une langue à apprendre, une école à intégrer, une vie à refaire. Chaque mot appris, chaque examen réussi, une victoire arrachée.',
+        dates: '',
       },
       {
-        title: 'Suivi & facturation',
-        subtitle: 'Suivi rigoureux des facturations clients pour assurer la comptabilité.',
-        dates: '2023',
-      },
-      {
-        title: 'Stage de 330 heures',
-        subtitle: 'Stage non rémunéré — coordination des équipes et service client aux heures de pointe.',
-        dates: '2023',
+        title: 'Le CESS en poche — Athénée Royal de Gilly',
+        subtitle:
+          'Décrocher son diplôme secondaire dans une langue apprise sur le tard : la première grande victoire d\u2019un long chemin.',
+        dates: '2021–2023',
       },
     ],
   },
   {
     number: '02',
-    category: 'Formations en cours',
-    name: 'Administrateur Réseaux & Systèmes',
+    category: 'La bascule vers l\u2019informatique',
+    name: 'HELHa Montignies — 1 an',
     entries: [
       {
-        title: 'Administrateur Réseaux et Systèmes',
-        subtitle: '2e année — formation en alternance chez IFAPME Charleroi.',
-        dates: 'En cours',
+        title: 'Bachelier Informatique de Gestion — BAC 1',
+        subtitle:
+          'Sur le campus de Montignies-sur-Sambre, une première année pour poser des fondations : ordinateurs et réseaux, systèmes d\u2019exploitation, gestion d\u2019entreprise, programmation.',
+        dates: '2023–2024',
       },
       {
-        title: 'BAC 1 Informatique de Gestion',
-        subtitle: 'Première année en Haute École HELHa, Charleroi.',
-        dates: '2023',
+        title: 'Une direction se précise',
+        subtitle:
+          'Entre les cours, une évidence prend forme : ce qui attire Ayad, ce n\u2019est pas seulement le code — c\u2019est l\u2019infrastructure, le réseau, la machine qui fait tourner les choses.',
+        dates: '2023–2024',
       },
       {
-        title: 'CESS — Tourisme de Gestion',
-        subtitle: 'Certificat d\u2019enseignement secondaire supérieur, Athénée Royal de Gilly.',
-        dates: '2021',
+        title: 'Oser changer de voie',
+        subtitle:
+          'Après cette année, Ayad choisit délibérément la filière qui correspond à sa vocation : l\u2019administration des systèmes et des réseaux.',
+        dates: '2024',
       },
     ],
   },
   {
     number: '03',
-    category: 'Diplômes & certificats',
-    name: 'Cisco & Informatique',
+    category: 'La formation qui construit le métier',
+    name: 'IFAPME Charleroi — 2 ans',
     entries: [
       {
-        title: 'CCNA — Switching, Routing & Wireless Essentials',
-        subtitle: 'Certificat Cisco Networking Academy, délivré en 2026 (mention vérifiée).',
+        title: '1re année — les fondamentaux',
+        subtitle:
+          'Systèmes Windows et Linux, virtualisation, labos de diagnostic et de maintenance : la base technique, apprise par la pratique.',
+        dates: '2024–2025',
+      },
+      {
+        title: '2e année — la montée en compétence',
+        subtitle:
+          'Bases réseaux et protocoles, administration serveur, sécurité, gestion de projets IT (TFE). La pratique en entreprise est au cœur de la formation.',
+        dates: '2025–2026 · en cours',
+      },
+      {
+        title: 'Le stage chez ICT Vision (2026)',
+        subtitle:
+          'Site survey Ekahau, design Wi-Fi, plans de positionnement multi-systèmes, patching & datacabling sur chantier, documents techniques, intelligence artificielle : le terrain, pour de vrai.',
         dates: '2026',
       },
       {
-        title: 'IT Essentials — Cisco',
-        subtitle: 'Cisco Networking Academy — bases matérielles et logicielles.',
-        dates: '2024',
-      },
-      {
-        title: 'Networking Basics — Cisco',
-        subtitle: 'Cisco Networking Academy — fondamentaux réseaux (Packet Tracer).',
-        dates: '2024',
+        title: 'La première expérience — Hôtel Ibis, Charleroi',
+        subtitle:
+          '330 h de stage en 2023 : accueil, réservations, facturation. Le sens du client et du travail d\u2019équipe, avant même la technique.',
+        dates: '2023',
       },
     ],
   },
@@ -152,9 +162,11 @@ function ProjectCard({
                 <h4 className="font-medium text-[#D7E2EA] uppercase tracking-wide text-base sm:text-lg">
                   {entry.title}
                 </h4>
-                <span className="text-[#D7E2EA]/50 font-light whitespace-nowrap text-sm">
-                  {entry.dates}
-                </span>
+                {entry.dates && (
+                  <span className="text-[#D7E2EA]/50 font-light whitespace-nowrap text-sm">
+                    {entry.dates}
+                  </span>
+                )}
               </div>
               <p className="font-light text-[#D7E2EA]/70 leading-relaxed text-sm sm:text-base">
                 {entry.subtitle}
