@@ -5,37 +5,37 @@ const SKILLS = [
     number: '01',
     name: 'Multitechnique',
     description:
-      'Intervention sur l\u2019ensemble des corps de métier d\u2019un chantier IT : câblage structuré, électricité courants faibles, data, incendie (détection), intrusion et vidéosurveillance IP.',
+      'J\u2019interviens sur l\u2019ensemble des corps de métier d\u2019un chantier IT : câblage structuré, électricité courants faibles, data, incendie (détection), intrusion et vidéosurveillance IP.',
   },
   {
     number: '02',
     name: 'Réseau — VLAN & routage',
     description:
-      'Configuration de VLAN, routage inter-VLAN, segmentation et sécurité des switchs. Bases CCNA (Switching, Routing & Wireless Essentials) appliquées au terrain.',
+      'Je configure des VLAN, le routage inter-VLAN et la sécurité des switchs. Bases CCNA (Switching, Routing & Wireless Essentials) appliquées au terrain.',
   },
   {
     number: '03',
     name: 'Wi-Fi — SSID & Ekahau',
     description:
-      'Création et configuration de SSID, sécurisation des réseaux sans fil (WPA2/WPA3), surveys Wi-Fi et cartographies de couverture Ekahau (dBm, canaux, bandes 2,4/5 GHz).',
+      'Je crée et configure des SSID, je sécurise les réseaux sans fil (WPA2/WPA3), je réalise des surveys Wi-Fi et des cartographies de couverture Ekahau (dBm, canaux, bandes 2,4/5 GHz).',
   },
   {
     number: '04',
     name: 'Setup serveur — Windows Server 2022',
     description:
-      'Installation et configuration de serveurs Windows Server 2022 : Active Directory (AD DS), DNS, DHCP, GPO, partages et gestion des utilisateurs.',
+      'J\u2019installe et configure des serveurs Windows Server 2022 : Active Directory (AD DS), DNS, DHCP, GPO, partages et gestion des utilisateurs.',
   },
   {
     number: '05',
     name: 'Administration Linux & virtualisation',
     description:
-      'Administration de systèmes Linux (services, utilisateurs, droits), gestion de machines virtuelles (VMware) et des sauvegardes.',
+      'J\u2019administre des systèmes Linux (services, utilisateurs, droits), je gère des machines virtuelles (VMware) et les sauvegardes.',
   },
   {
     number: '06',
     name: 'Outils & documentation de projet',
     description:
-      'Documents techniques de chantier, plans de positionnement multi-systèmes, intégration d\u2019outils d\u2019intelligence artificielle dans les flux de travail.',
+      'Je rédige des documents techniques de chantier et des plans de positionnement multi-systèmes, et j\u2019intègre des outils d\u2019intelligence artificielle dans les flux de travail.',
   },
 ]
 

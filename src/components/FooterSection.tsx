@@ -32,7 +32,7 @@ const CONTACT_LINES = [
   { label: 'Email', value: 'majmaieayad@gmail.com' },
   { label: 'GSM', value: '+32 4 65 29 80 47' },
   { label: 'Adresse', value: 'Rue de Zone 69B, 6030 Charleroi' },
-  { label: 'Disponibilité', value: 'Immédiate — stage & emploi' },
+  { label: 'Disponibilité', value: 'Immédiate — en recherche d\u2019emploi IT' },
 ]
 
 function ContactPanel({ visible }: { visible: boolean }) {

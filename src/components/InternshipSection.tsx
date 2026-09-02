@@ -8,37 +8,37 @@ const REALIZATIONS = [
     number: '01',
     name: 'Site Survey Ekahau',
     description:
-      "Relevés Wi-Fi sur site avec Ekahau : analyse de la couverture, de la qualité du signal et des interférences.",
+      "J'ai réalisé des relevés Wi-Fi sur site avec Ekahau : analyse de la couverture, de la qualité du signal et des interférences.",
   },
   {
     number: '02',
     name: 'Design Wi-Fi',
     description:
-      "Conception de réseaux sans fil : positionnement des points d'accès et planification des canaux et fréquences.",
+      "J'ai conçu des réseaux sans fil : positionnement des points d'accès et planification des canaux et fréquences.",
   },
   {
     number: '03',
     name: 'Plans de positions techniques spéciales',
     description:
-      "Réalisation de plans techniques de positionnement des équipements spéciaux sur site.",
+      "J'ai réalisé des plans techniques de positionnement des équipements spéciaux sur site.",
   },
   {
     number: '04',
     name: 'Patching & datacabling sur chantier',
     description:
-      "Câblage et brassage sur chantier : pose des chemins de câbles, raccordements et organisation des baies.",
+      "J'ai effectué du câblage et du brassage sur chantier : pose des chemins de câbles, raccordements et organisation des baies.",
   },
   {
     number: '05',
     name: 'Réalisation de documents techniques',
     description:
-      'Rédaction et mise en forme des documentations techniques des projets.',
+      'J\u2019ai rédigé et mis en forme les documentations techniques des projets.',
   },
   {
     number: '06',
     name: 'Intelligence artificielle',
     description:
-      "Utilisation de l'intelligence artificielle dans le cadre des projets : outils et automatisation.",
+      "J'ai utilisé l'intelligence artificielle dans le cadre des projets : outils et automatisation.",
   },
 ]
 
@@ -74,7 +74,7 @@ export default function InternshipSection() {
             style={{ fontSize: 'clamp(1rem, 1.6vw, 1.25rem)' }}
           >
             Au cours de mon stage, j&apos;ai contribué à plusieurs projets. Les deux
-            réalisations les plus marquantes&nbsp;:
+            réalisations dont je suis le plus fier&nbsp;:
           </p>
         </FadeIn>
 
@@ -101,18 +101,18 @@ export default function InternshipSection() {
             </FadeIn>
             <FadeIn delay={0.1} y={20}>
               <p className="font-light text-[#D7E2EA]/80 leading-relaxed text-sm sm:text-base">
-                Carte de couverture produite avec Ekahau pour analyser et optimiser le réseau
-                sans fil d&apos;un immeuble de bureaux.
+                J&apos;ai produit cette carte de couverture avec Ekahau pour analyser et optimiser
+                le réseau sans fil d&apos;un immeuble de bureaux.
               </p>
             </FadeIn>
             <FadeIn delay={0.2} y={20}>
               <ul className="flex flex-col gap-2.5">
                 {[
-                  'Bande 5 GHz analysée — la plus sollicitée pour les usages exigeants.',
-                  'Échelle de puissance en dBm : du vert (signal fort) au rouge (zones à la limite de la connectivité).',
-                  'Points d\u2019accès positionnés sur le plan (épingles) pour vérifier la couverture salle par salle.',
+                  'J\u2019ai analysé la bande 5 GHz — la plus sollicitée pour les usages exigeants.',
+                  'J\u2019ai interprété l\u2019échelle de puissance en dBm : du vert (signal fort) au rouge (zones à la limite de la connectivité).',
+                  'J\u2019ai positionné les points d\u2019accès sur le plan (épingles) pour vérifier la couverture salle par salle.',
                   'Mesure relevée sur l\u2019AP sélectionné : −52 dBm · canal 48 · largeur 20 MHz.',
-                  'Objectif atteint : couverture homogène sur l\u2019ensemble des espaces, sans zone morte.',
+                  'Résultat : couverture homogène sur l\u2019ensemble des espaces, sans zone morte.',
                 ].map((point) => (
                   <li key={point} className="flex gap-3 items-start">
                     <span className="mt-[9px] w-1.5 h-1.5 rounded-full bg-[#D7E2EA]/60 flex-shrink-0" />
@@ -145,19 +145,19 @@ export default function InternshipSection() {
             </FadeIn>
             <FadeIn delay={0.1} y={20}>
               <p className="font-light text-[#D7E2EA]/80 leading-relaxed text-sm sm:text-base">
-                Plan technique produit pour le chantier&nbsp;: Wi-Fi, électricité, data,
-                incendie, intrusion — implantation des équipements et tracé des câblages sur un
-                bâtiment (salles, stockage, accueil…).
+                J&apos;ai produit ce plan technique pour le chantier&nbsp;: Wi-Fi, électricité,
+                data, incendie, intrusion — implantation des équipements et tracé des câblages sur
+                un bâtiment (salles, stockage, accueil…).
               </p>
             </FadeIn>
             <FadeIn delay={0.2} y={20}>
               <ul className="flex flex-col gap-2.5">
                 {[
-                  'Toutes les familles couvertes sur un même plan : Wi-Fi, électricité, data, incendie, intrusion.',
-                  'Solutions IP avec nomenclature complète : caméras, points d\u2019accès et équipements repérés par codes métier.',
-                  'Racks et armoires techniques positionnés (SSI-001, baies data…) pour organiser les équipements.',
-                  'Boucles de câblage tracées entre équipements et armoires, avec repères d\u2019installation précis (hauteurs de pose h = 110 cm, h = 30 cm).',
-                  'Locaux et surfaces légendés pour une lecture directe sur site.',
+                  'J\u2019ai couvert toutes les familles sur un même plan : Wi-Fi, électricité, data, incendie, intrusion.',
+                  'J\u2019ai intégré les solutions IP avec nomenclature complète : caméras, points d\u2019accès et équipements repérés par codes métier.',
+                  'J\u2019ai positionné les racks et armoires techniques (SSI-001, baies data…) pour organiser les équipements.',
+                  'J\u2019ai tracé les boucles de câblage entre équipements et armoires, avec des repères d\u2019installation précis (hauteurs de pose h = 110 cm, h = 30 cm).',
+                  'J\u2019ai légendé les locaux et surfaces pour une lecture directe sur site.',
                 ].map((point) => (
                   <li key={point} className="flex gap-3 items-start">
                     <span className="mt-[9px] w-1.5 h-1.5 rounded-full bg-[#D7E2EA]/60 flex-shrink-0" />

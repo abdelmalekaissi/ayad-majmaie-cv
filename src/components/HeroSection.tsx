@@ -62,7 +62,7 @@ export default function HeroSection() {
             className="font-light uppercase tracking-wide leading-snug text-[#D7E2EA] max-w-[160px] sm:max-w-[220px] md:max-w-[260px]"
             style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
           >
-            Administrateur réseaux &amp; systèmes en formation · recherche de stage
+            Administrateur réseaux &amp; systèmes · en recherche d&apos;emploi IT
           </p>
         </FadeIn>
         <FadeIn delay={0.5} y={20}>

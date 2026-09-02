@@ -39,7 +39,8 @@ export default function AboutSection() {
               Administrateur systèmes et réseaux en formation, j&apos;allie une rigueur acquise en
               environnement professionnel à des compétences techniques en Linux, virtualisation et
               sécurité. Réactif et habitué au travail d&apos;équipe, je garantis fiabilité et
-              disponibilité des infrastructures.
+              disponibilité des infrastructures. Je suis aujourd&apos;hui à la recherche d&apos;un
+              emploi dans l&apos;IT pour mettre ces compétences au service de votre équipe.
             </p>
           </FadeIn>
 
