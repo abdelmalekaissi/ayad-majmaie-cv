@@ -3,39 +3,39 @@ import FadeIn from './FadeIn'
 const SKILLS = [
   {
     number: '01',
-    name: 'Administration Linux & Windows',
+    name: 'Multitechnique',
     description:
-      'Administration système sur Windows et Linux : gestion des utilisateurs, services, et serveurs au quotidien.',
+      'Intervention sur l\u2019ensemble des corps de métier d\u2019un chantier IT : câblage structuré, électricité courants faibles, data, incendie (détection), intrusion et vidéosurveillance IP.',
   },
   {
     number: '02',
-    name: 'Sécurité réseaux',
+    name: 'Réseau — VLAN & routage',
     description:
-      'Sécurisation des infrastructures : bonnes pratiques, protection des accès, durcissement des équipements réseau.',
+      'Configuration de VLAN, routage inter-VLAN, segmentation et sécurité des switchs. Bases CCNA (Switching, Routing & Wireless Essentials) appliquées au terrain.',
   },
   {
     number: '03',
-    name: 'Cisco — routage & commutation',
+    name: 'Wi-Fi — SSID & Ekahau',
     description:
-      'IT Essentials, Networking Basics et CCNA : Switching, Routing & Wireless Essentials (certifié 2026). Pratique régulière sur Packet Tracer.',
+      'Création et configuration de SSID, sécurisation des réseaux sans fil (WPA2/WPA3), surveys Wi-Fi et cartographies de couverture Ekahau (dBm, canaux, bandes 2,4/5 GHz).',
   },
   {
     number: '04',
-    name: 'Virtualisation',
+    name: 'Setup serveur — Windows Server 2022',
     description:
-      'Virtualisation et gestion de machines virtuelles (VMware), pour des environnements fiables et flexibles.',
+      'Installation et configuration de serveurs Windows Server 2022 : Active Directory (AD DS), DNS, DHCP, GPO, partages et gestion des utilisateurs.',
   },
   {
     number: '05',
-    name: 'Active Directory & gestion',
+    name: 'Administration Linux & virtualisation',
     description:
-      'Administration Active Directory, gestion des sauvegardes et dépannage matériel et logiciel.',
+      'Administration de systèmes Linux (services, utilisateurs, droits), gestion de machines virtuelles (VMware) et des sauvegardes.',
   },
   {
     number: '06',
-    name: 'Langues & travail d\'équipe',
+    name: 'Outils & documentation de projet',
     description:
-      'Français courant, anglais professionnel. Rigueur, réactivité et coordination d\'équipe acquis en environnement professionnel.',
+      'Documents techniques de chantier, plans de positionnement multi-systèmes, intégration d\u2019outils d\u2019intelligence artificielle dans les flux de travail.',
   },
 ]
 

@@ -73,33 +73,13 @@ export default function InternshipSection() {
             className="font-light leading-relaxed text-center text-[#D7E2EA]/80 max-w-2xl mx-auto mt-8"
             style={{ fontSize: 'clamp(1rem, 1.6vw, 1.25rem)' }}
           >
-            Au cours de mon stage, j&apos;ai contribué à plusieurs projets et réalisé :
+            Au cours de mon stage, j&apos;ai contribué à plusieurs projets. Les deux
+            réalisations les plus marquantes&nbsp;:
           </p>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-12 sm:mt-16">
-          {REALIZATIONS.map((item, i) => (
-            <FadeIn key={item.number} delay={i * 0.08} y={25}>
-              <div className="rounded-3xl border border-[#D7E2EA]/20 bg-[#D7E2EA]/5 p-6 sm:p-8 h-full flex flex-col gap-3">
-                <span
-                  className="font-black text-[#D7E2EA]/30 leading-none"
-                  style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)' }}
-                >
-                  {item.number}
-                </span>
-                <h3 className="font-medium uppercase text-[#D7E2EA] text-lg sm:text-xl">
-                  {item.name}
-                </h3>
-                <p className="font-light text-[#D7E2EA]/70 leading-relaxed text-sm sm:text-base">
-                  {item.description}
-                </p>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
-
-        {/* Case study 1 — Design Wi-Fi */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 sm:gap-10 items-center mt-16">
+        {/* EN AVANT — Case study 1 : Design Wi-Fi */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 sm:gap-10 items-center mt-12">
           <FadeIn y={30} className="md:col-span-3">
             <figure className="rounded-3xl overflow-hidden border border-[#D7E2EA]/25 bg-[#D7E2EA]/5">
               <img
@@ -155,7 +135,7 @@ export default function InternshipSection() {
           </div>
         </div>
 
-        {/* Case study 2 — Plan de positionnement */}
+        {/* EN AVANT — Case study 2 : Plan de positionnement */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 sm:gap-10 items-center mt-14">
           <div className="md:col-span-2 md:order-2 flex flex-col gap-4">
             <FadeIn y={20}>
@@ -211,6 +191,33 @@ export default function InternshipSection() {
               </figcaption>
             </figure>
           </FadeIn>
+        </div>
+
+        {/* LE RESTE — les autres réalisations */}
+        <FadeIn y={20}>
+          <h3 className="font-medium uppercase text-[#D7E2EA] text-lg sm:text-xl text-center mt-20 mb-8">
+            Et aussi&nbsp;…
+          </h3>
+        </FadeIn>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+          {REALIZATIONS.map((item, i) => (
+            <FadeIn key={item.number} delay={i * 0.08} y={25}>
+              <div className="rounded-3xl border border-[#D7E2EA]/20 bg-[#D7E2EA]/5 p-6 sm:p-8 h-full flex flex-col gap-3">
+                <span
+                  className="font-black text-[#D7E2EA]/30 leading-none"
+                  style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)' }}
+                >
+                  {item.number}
+                </span>
+                <h4 className="font-medium uppercase text-[#D7E2EA] text-base sm:text-lg">
+                  {item.name}
+                </h4>
+                <p className="font-light text-[#D7E2EA]/70 leading-relaxed text-sm sm:text-base">
+                  {item.description}
+                </p>
+              </div>
+            </FadeIn>
+          ))}
         </div>
       </div>
     </section>
