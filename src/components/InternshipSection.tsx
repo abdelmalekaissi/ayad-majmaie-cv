@@ -1,4 +1,7 @@
 import FadeIn from './FadeIn'
+import ictvisionLogo from '../assets/ictvision-logo.png'
+import ictvisionPlanImg from '../assets/ictvision-plan.png'
+import ictvisionWifiImg from '../assets/ictvision-wifisurvey.png'
 
 const REALIZATIONS = [
   {
@@ -47,11 +50,18 @@ export default function InternshipSection() {
     >
       <div className="max-w-5xl mx-auto">
         <FadeIn y={40}>
-          <p className="font-light uppercase tracking-[0.3em] text-[#D7E2EA]/40 text-xs sm:text-sm text-center mb-4">
-            Stage · 2026 · plusieurs projets
-          </p>
+          <div className="flex flex-col items-center gap-4">
+            <img
+              src={ictvisionLogo}
+              alt="Logo ICT Vision"
+              className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+            />
+            <p className="font-light uppercase tracking-[0.3em] text-[#D7E2EA]/40 text-xs sm:text-sm">
+              Stage · 2026 · plusieurs projets
+            </p>
+          </div>
           <h2
-            className="hero-heading font-black uppercase leading-none tracking-tight text-center"
+            className="hero-heading font-black uppercase leading-none tracking-tight text-center mt-4"
             style={{ fontSize: 'clamp(2rem, 6.5vw, 90px)' }}
           >
             Mon stage chez ICT&nbsp;Vision
@@ -86,6 +96,35 @@ export default function InternshipSection() {
               </div>
             </FadeIn>
           ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-6">
+          <FadeIn delay={0.1} y={30}>
+            <figure className="rounded-3xl overflow-hidden border border-[#D7E2EA]/25 bg-[#D7E2EA]/5">
+              <img
+                src={ictvisionWifiImg}
+                alt="Heatmap de couverture Wi-Fi réalisée pendant le stage (Ekahau)"
+                className="w-full h-56 sm:h-72 object-cover"
+                loading="lazy"
+              />
+              <figcaption className="px-4 py-3 text-left text-[#D7E2EA]/70 font-light text-xs sm:text-sm">
+                Heatmap de couverture Wi-Fi — design &amp; site survey (Ekahau)
+              </figcaption>
+            </figure>
+          </FadeIn>
+          <FadeIn delay={0.2} y={30}>
+            <figure className="rounded-3xl overflow-hidden border border-[#D7E2EA]/25 bg-[#D7E2EA]/5">
+              <img
+                src={ictvisionPlanImg}
+                alt="Plan de positionnement technique réalisé pendant le stage"
+                className="w-full h-56 sm:h-72 object-cover"
+                loading="lazy"
+              />
+              <figcaption className="px-4 py-3 text-left text-[#D7E2EA]/70 font-light text-xs sm:text-sm">
+                Plan de positionnement technique — relevé sur site
+              </figcaption>
+            </figure>
+          </FadeIn>
         </div>
       </div>
     </section>
