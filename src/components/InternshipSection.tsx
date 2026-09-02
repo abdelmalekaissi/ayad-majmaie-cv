@@ -160,22 +160,23 @@ export default function InternshipSection() {
           <div className="md:col-span-2 md:order-2 flex flex-col gap-4">
             <FadeIn y={20}>
               <h3 className="font-medium uppercase text-[#D7E2EA] text-xl sm:text-2xl">
-                Plan de positionnement technique
+                Plan de positionnement technique multi-systèmes
               </h3>
             </FadeIn>
             <FadeIn delay={0.1} y={20}>
               <p className="font-light text-[#D7E2EA]/80 leading-relaxed text-sm sm:text-base">
-                Plan technique produit pour le chantier&nbsp;: implantation des équipements et
-                tracé des câblages sur un bâtiment (salles, stockage, accueil…).
+                Plan technique produit pour le chantier&nbsp;: Wi-Fi, électricité, data,
+                incendie, intrusion — implantation des équipements et tracé des câblages sur un
+                bâtiment (salles, stockage, accueil…).
               </p>
             </FadeIn>
             <FadeIn delay={0.2} y={20}>
               <ul className="flex flex-col gap-2.5">
                 {[
-                  'Équipements repérés par codes métier : détecteurs (DA), déclencheurs (DS), boîtes de points (BP).',
-                  'Armoire de sécurité SSI-001 positionnée dans le local technique.',
-                  'Boucles de câblage tracées (détection et alimentations) entre équipements et armoire.',
-                  'Repères d\u2019installation précis : hauteurs de pose (h = 110 cm, h = 30 cm).',
+                  'Toutes les familles couvertes sur un même plan : Wi-Fi, électricité, data, incendie, intrusion.',
+                  'Solutions IP avec nomenclature complète : caméras, points d\u2019accès et équipements repérés par codes métier.',
+                  'Racks et armoires techniques positionnés (SSI-001, baies data…) pour organiser les équipements.',
+                  'Boucles de câblage tracées entre équipements et armoires, avec repères d\u2019installation précis (hauteurs de pose h = 110 cm, h = 30 cm).',
                   'Locaux et surfaces légendés pour une lecture directe sur site.',
                 ].map((point) => (
                   <li key={point} className="flex gap-3 items-start">
@@ -192,8 +193,8 @@ export default function InternshipSection() {
                 <span className="font-medium uppercase tracking-wider text-[#D7E2EA]">
                   Ce que ça démontre&nbsp;:
                 </span>{' '}
-                lecture et production de plans d&apos;installation conformes, directement
-                exploitables par les équipes de chantier.
+                production de plans d&apos;installation multi-systèmes conformes, avec
+                nomenclature claire — directement exploitables par les équipes de chantier.
               </p>
             </FadeIn>
           </div>
