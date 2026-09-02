@@ -11,9 +11,26 @@ const NAV_LINKS = [
   { label: 'Contact', href: '#top' },
 ]
 
+const HERO_VIDEO_URL =
+  'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260815_034306_a6072b2b-fed9-442e-9cf1-603074e3f7b4.mp4'
+
 export default function HeroSection() {
   return (
     <section id="top" className="relative h-screen flex flex-col overflow-hidden">
+      {/* Background video */}
+      <div className="absolute inset-0 z-0">
+        <video
+          className="w-full h-full object-cover"
+          src={HERO_VIDEO_URL}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-label="Vidéo d'arrière-plan"
+        />
+        <div className="absolute inset-0 bg-black/60" />
+      </div>
       {/* Navbar */}
       <FadeIn delay={0} y={-20} as="nav">
         <div className="flex justify-between px-6 md:px-10 pt-6 md:pt-8">

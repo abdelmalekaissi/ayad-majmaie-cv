@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         kanit: ['Kanit', 'sans-serif'],
+        sans: ['Barlow', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'dm-serif': ['Instrument Serif', 'serif'],
       },
     },
   },
